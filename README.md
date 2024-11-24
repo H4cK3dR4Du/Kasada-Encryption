@@ -16,7 +16,8 @@
 </p>
 
 <h2 align="center"> ⚔️ Kasada Analysis ⚔️</h2>
-> [!NOTE]  
+> [!NOTE]
+
 > In this repository, I will show where the encryption function for kasada.io is located and how to encrypt the payload.
 - Kasada has a VM with a total of 96 opcodes, referred to as 'Operation codes.' These are basic instructions that a virtual machine (VM) executes to perform specific operations, such as calculations, control flow, or data manipulation. They act as the 'language' the VM interprets to run programs.
 
