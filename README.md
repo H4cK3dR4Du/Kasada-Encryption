@@ -8,7 +8,7 @@
 <h2 align="center"> 📝 Description 📝 </h2>
 
 <p align="center">
-    Explanation of how the encryption of kasada.io works, the anti-bot used by various platforms such as Nike, Twitch, Kick, and others.
+    Explanation of how the encryption of kasada.io works, the anti-bot used by various platforms such as Nike, Twitch, Kick, and others...
 </p>
 
 <p align="center">
