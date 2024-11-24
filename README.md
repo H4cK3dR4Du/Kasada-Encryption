@@ -22,6 +22,7 @@
 - Kasada has a VM with a total of 96 opcodes, referred to as 'Operation codes.' These are basic instructions that a virtual machine (VM) executes to perform specific operations, such as calculations, control flow, or data manipulation. They act as the 'language' the VM interprets to run programs.
 
 <h2 align="center"> 🌐 Kasada Encryption 🌐</h2>
+
 > [!NOTE]  
 > The key is constructed using several opcodes that perform byte operations, and be careful because the operations change every time.
 
@@ -57,6 +58,7 @@ new TextDecoder().decode(p)
 ![payload_decoded](https://github.com/user-attachments/assets/13d90f88-fa46-4826-9ef5-d09f040252dc)
 
 5. **Fingerprint info:**
+6. 
 > [!WARNING]
 > The fingerprint always has a different fp order in each request. If you make it static, you won’t receive 'reload: true' in the /tl response. The key must be constructed and the bytes parsed correctly, as I mentioned earlier, with the opcodes that operate on bytes. If you don't do this, it's very likely that your solver will be flagged and won't work.
 
