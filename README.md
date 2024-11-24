@@ -55,20 +55,22 @@ x length array (fingerprint) -> [...] (Variable: p)
 new TextDecoder().decode(p)
 ```
 - Output:
+
 ![payload_decoded](https://github.com/user-attachments/assets/13d90f88-fa46-4826-9ef5-d09f040252dc)
 
 5. **Fingerprint info:**
-6. 
 > [!WARNING]
 > The fingerprint always has a different fp order in each request. If you make it static, you won’t receive 'reload: true' in the /tl response. The key must be constructed and the bytes parsed correctly, as I mentioned earlier, with the opcodes that operate on bytes. If you don't do this, it's very likely that your solver will be flagged and won't work.
 
 <h2 align="center"> 💭 Extra Information 💭</h2>
 - In the payload, there are 2 values that are NOT static. To obtain them, you must find them within the decoded VM bytecode. If you have doubts, you can debug a piece of ips.js where they use slice to get those values.
+
 ```
 E.t = function(r, e) {
     return E.r.slice(e, e + r) // Here
 }
 ```
+
 - If you don't know which 2 values I'm referring to, I'll leave an image here so you can see them yourself:
 ![values](https://github.com/user-attachments/assets/f73a2e91-79c0-46b4-9971-7088faaee284)
 
